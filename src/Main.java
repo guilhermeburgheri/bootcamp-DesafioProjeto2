@@ -26,9 +26,15 @@ public class Main {
         bootcamp.getConteudos().add(curso2);
         bootcamp.getConteudos().add(mentoria);
 
+        //--------------------------------------------------------------------------------------------------
+
         Dev devGuilherme = new Dev();
         devGuilherme.setNome("Guilherme");
+        devGuilherme.setCor("Branco");
+        devGuilherme.setIdade(21);
         devGuilherme.increverBootcamp(bootcamp);
+
+        System.out.println(devGuilherme.getNome() + " possui " + devGuilherme.getIdade() + " anos e é " + devGuilherme.getCor());
 
         System.out.println("Conteúdos Inscritos de Guilherme: " + devGuilherme.getConteudosInscritos());
 
